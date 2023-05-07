@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="MyMod\Agent2\Console\FirstCommand">
+        <arguments>
+<!--            <argument name="catalogProductStatus" xsi:type="object">Magento\Catalog\Model\Product\Attribute\Source\Status\Proxy</argument>-->
+            <argument name="productLink" xsi:type="object">MyMod\Agent2\Helper\ProxyCalledHelper\Proxy</argument>
+        </arguments>
+    </type>
+</config>

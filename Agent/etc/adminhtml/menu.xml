@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="MyMod_Agent::Agent"
+             title="Agent"
+             translate="title"
+             module="MyMod_Agent"
+             sortOrder="20"
+             resource="MyMod_Agent::Agent"
+        />
+
+        <add id="MyMod_Agent::product"
+             title="Listings"
+             translate="title"
+             module="MyMod_Agent"
+             sortOrder="10"
+             parent="MyMod_Agent::Agent"
+             resource="MyMod_Agent::product"
+        />
+        <add id="MyMod_Agent::profile"
+             title="Agent Information"
+             translate="title"
+             module="MyMod_Agent"
+             sortOrder="1"
+             parent="MyMod_Agent::product"
+             action="agent/index/index"
+             resource="MyMod_Agent::profile"
+        />
+    </menu>
+</config>
